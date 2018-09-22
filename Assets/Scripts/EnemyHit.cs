@@ -9,7 +9,8 @@ public class EnemyHit : MonoBehaviour {
     {
         if (other.CompareTag("Player"))
         {
-            other.transform.position = GameLogic.Instance.startPos;
+            other.GetComponent<PlayerMovement>().airborne = true;
+            other.GetComponent<PlayerMovement>().upVelocity = 50f+Mathf.Sqrt((other.GetComponent<PlayerMovement>().startPos-other.transform.position).magnitude);
             transform.parent.position = GameLogic.Instance.enemyStartPos;
             transform.parent.GetComponent<EnemyAI>().foundPlayer = false;
             transform.parent.GetComponent<NavMeshAgent>().ResetPath();
