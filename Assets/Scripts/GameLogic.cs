@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameLogic : MonoBehaviour{
 
@@ -8,9 +9,13 @@ public class GameLogic : MonoBehaviour{
     public int currentCollected = 0;
     public int collectedNeeded = 0;
     public GameObject holding;
+	public static int endTime = 0;
+	public static int startTime;
+	public Text timerText;
 
     public void Start()
     {
+		StartCoroutine(TimerTracker());
         Instance = this;
         foreach (GameObject obj in FindObjectsOfType<GameObject>())
         {
@@ -20,6 +25,14 @@ public class GameLogic : MonoBehaviour{
             }
         }
     }
+
+	IEnumerator TimerTracker(){
+		while (enabled){
+			endTime = (int)Time.time - startTime;
+			timerText.text = "Timer: " + endTime;
+			yield return new WaitForSeconds(1);
+		}
+	}
 
     public void PickUp(GameObject obj)
     {
