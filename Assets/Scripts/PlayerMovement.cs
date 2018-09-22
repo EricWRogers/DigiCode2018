@@ -21,7 +21,6 @@ public class PlayerMovement : MonoBehaviour {
 		    anim.SetFloat("forwardVelocity", ctrl.velocity.magnitude);
             Debug.Log(ctrl.velocity.x);
             transform.Rotate(new Vector3(0, Input.GetAxis("Horizontal") * rotateSpeed, 0));
-            
 		    anim.SetFloat("turnVelocity", ctrl.velocity.y);
             Debug.Log(ctrl.velocity.y);
         }
