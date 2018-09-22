@@ -10,7 +10,6 @@ public class CollectableUI : MonoBehaviour {
     public Image baseImg;
 
 	void Start () {
-        Debug.Log(GameLogic.Instance.collectables.Capacity);
 		for (int i = 0; i < GameLogic.Instance.collectables.Capacity; i++)
         {
             imageList.Add(Instantiate(baseImg));
