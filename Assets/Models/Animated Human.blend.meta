@@ -47,6 +47,8 @@ ModelImporter:
     100082: Spine
     100084: Spine1
     100086: Spine2
+    100088: Belt
+    100090: Tunic
     400000: //RootNode
     400002: Head
     400004: HeadTop_End
@@ -91,8 +93,13 @@ ModelImporter:
     400082: Spine
     400084: Spine1
     400086: Spine2
+    400088: Belt
+    400090: Tunic
     2100000: Texture
+    2100002: Tunic
     4300000: Human_Mesh
+    4300002: Belt
+    4300004: Tunic
     7400000: Default Take
     7400002: ArmatureAction_002
     7400004: Death
@@ -104,6 +111,8 @@ ModelImporter:
     7400016: Working
     9500000: //RootNode
     13700000: Human_Mesh
+    13700002: Belt
+    13700004: Tunic
     2186277476908879412: ImportLogs
   externalObjects:
   - first:
@@ -111,6 +120,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Texture
     second: {fileID: 2100000, guid: 8d10ad637d63bb34a8c8fa73a20427ba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tunic
+    second: {fileID: 2100000, guid: ac4d9c316c08d475ebb7937d7fc3d61e, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
