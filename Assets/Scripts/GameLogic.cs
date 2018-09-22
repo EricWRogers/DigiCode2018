@@ -8,7 +8,7 @@ public class GameLogic : MonoBehaviour{
     public static GameLogic Instance;
     public int currentCollected = 0;
     public int collectedNeeded = 0;
-    public GameObject holding;
+    public GameObject holding = null;
 
     public int timer = 90;
     public float timerSeconds;
@@ -75,6 +75,7 @@ public class GameLogic : MonoBehaviour{
             // If we're not holding a collectable, pick it up
             heldPos = obj.transform.position;
             holding = obj;
+            holding.transform.SetParent(plr.transform);
         }
     }
 
@@ -84,6 +85,7 @@ public class GameLogic : MonoBehaviour{
         {
             // If we're holding a collectable, drop it
             holding.transform.position = heldPos;
+            holding.transform.SetParent(transform.root.parent);
             holding = null;
             anim.SetBool("holding", false);
         }
