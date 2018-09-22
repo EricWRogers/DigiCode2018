@@ -9,12 +9,16 @@ public class GameLogic : MonoBehaviour{
     public int currentCollected = 0;
     public int collectedNeeded = 0;
     public GameObject holding;
-	public static int endTime = 0;
-	public static int startTime;
-	public Text timerText;
+
+    public int timer = 90;
+    public float timerSeconds;
+    public int timerMinutes;
+
+    public Canvas mainCanvas, winCanvas, loseCanvas, pauseCanvas;
 
     public void Start()
     {
+        Time.timeScale = 1f;
         Instance = this;
         foreach (GameObject obj in FindObjectsOfType<GameObject>())
         {
@@ -23,8 +27,26 @@ public class GameLogic : MonoBehaviour{
                 collectedNeeded++;
             }
         }
+        timerMinutes = timer / 60;
+        timerSeconds = timer % 60;
     }
 
+    private void Update()
+    {
+        timerSeconds -= Time.deltaTime;
+        if (timerSeconds < 0f)
+        {
+            if (timerMinutes > 0)
+            {
+                timerMinutes--;
+            } else
+            {
+                Time.timeScale = 0f;
+                mainCanvas.gameObject.SetActive(false);
+                loseCanvas.gameObject.SetActive(true);
+            }
+        }
+    }
 
     public void PickUp(GameObject obj)
     {
@@ -54,7 +76,9 @@ public class GameLogic : MonoBehaviour{
             currentCollected++;
             if (currentCollected == collectedNeeded)
             {
-                //Win game if we have all collectables
+                Time.timeScale = 0f;
+                mainCanvas.gameObject.SetActive(false);
+                winCanvas.gameObject.SetActive(true);
             }
         }
     }
