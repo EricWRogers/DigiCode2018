@@ -10,7 +10,6 @@ public class CollectableUI : MonoBehaviour {
     public Image baseImg;
 
 	void Start () {
-        Debug.Log(GameLogic.Instance.collectables.Capacity);
 		for (int i = 0; i < GameLogic.Instance.collectables.Capacity; i++)
         {
             imageList.Add(Instantiate(baseImg));
@@ -20,7 +19,7 @@ public class CollectableUI : MonoBehaviour {
         {
             imageList[i].GetComponent<RectTransform>().localPosition = new Vector3(20+ (i * 30), 20);
             imageList[i].color = new Color(1f, 1f, 1f, 0.5f);
-            imageList[i].transform.parent = transform;
+            imageList[i].transform.SetParent(transform);
         }
 	}
 
@@ -30,6 +29,12 @@ public class CollectableUI : MonoBehaviour {
             if (GameLogic.Instance.collectables[i] == null)
             {
                 imageList[i].color = new Color(1f, 1f, 1f, 1f);
+            } else if (GameLogic.Instance.holding == GameLogic.Instance.collectables[i])
+            {
+                imageList[i].color = new Color(1f, 1f, 0f, 1f);
+            } else
+            {
+                imageList[i].color = new Color(1f, 1f, 1f, 0.5f);
             }
         }
     }
