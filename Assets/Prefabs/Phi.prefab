@@ -775,6 +775,7 @@ GameObject:
   - component: {fileID: 95731210456472136}
   - component: {fileID: 143203017049316706}
   - component: {fileID: 114155909533992276}
+  - component: {fileID: 136986479160230086}
   m_Layer: 0
   m_Name: Phi
   m_TagString: Player
@@ -1080,7 +1081,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1995925310141686}
   m_LocalRotation: {x: 0.2588191, y: -0, z: -0, w: 0.9659258}
-  m_LocalPosition: {x: 0.59584916, y: 6, z: -11.193686}
+  m_LocalPosition: {x: 0, y: 6, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4189395221881526}
@@ -1659,8 +1660,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c01230b0ba56fc448c6cd5639866be9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0.1
-  rotateSpeed: 1
+  moveSpeed: 0.2
+  rotateSpeed: 2
 --- !u!124 &124125685672403150
 Behaviour:
   m_ObjectHideFlags: 1
@@ -1668,6 +1669,19 @@ Behaviour:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1995925310141686}
   m_Enabled: 1
+--- !u!136 &136986479160230086
+CapsuleCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1975862796567950}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 2
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!137 &137226444091777760
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1
