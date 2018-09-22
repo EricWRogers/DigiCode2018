@@ -15,7 +15,6 @@ public class GameLogic : MonoBehaviour{
 
     public void Start()
     {
-		StartCoroutine(TimerTracker());
         Instance = this;
         foreach (GameObject obj in FindObjectsOfType<GameObject>())
         {
@@ -26,13 +25,6 @@ public class GameLogic : MonoBehaviour{
         }
     }
 
-	IEnumerator TimerTracker(){
-		while (enabled){
-			endTime = (int)Time.time - startTime;
-			timerText.text = "Timer: " + endTime;
-			yield return new WaitForSeconds(1);
-		}
-	}
 
     public void PickUp(GameObject obj)
     {
