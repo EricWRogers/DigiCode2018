@@ -64,6 +64,7 @@ public class GameLogic : MonoBehaviour{
         if (holding)
         {
             holding.transform.position = plr.transform.position + Vector3.up*2.5f;
+            holding.transform.rotation = plr.transform.rotation;
             anim.SetBool("holding", true);
         }
     }
@@ -75,7 +76,6 @@ public class GameLogic : MonoBehaviour{
             // If we're not holding a collectable, pick it up
             heldPos = obj.transform.position;
             holding = obj;
-            holding.transform.SetParent(plr.transform);
         }
     }
 
@@ -85,7 +85,6 @@ public class GameLogic : MonoBehaviour{
         {
             // If we're holding a collectable, drop it
             holding.transform.position = heldPos;
-            holding.transform.SetParent(transform.root.parent);
             holding = null;
             anim.SetBool("holding", false);
         }

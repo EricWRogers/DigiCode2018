@@ -16,9 +16,11 @@ public class CameraZoom : MonoBehaviour {
         RaycastHit hit;
         if (Physics.Raycast(transform.parent.position+Vector3.up*0.01f, -transform.forward, out hit, pos.magnitude))
         {
-          
             Vector3 hitLocalPos = hit.point - transform.parent.position;
             transform.localPosition = new Vector3(pos.x / (pos.magnitude / hitLocalPos.magnitude), (pos.y / (pos.magnitude / hitLocalPos.magnitude)) + (1-(hitLocalPos.magnitude / pos.magnitude)), pos.z / (pos.magnitude / hitLocalPos.magnitude));
+        } else
+        {
+            transform.localPosition = pos;
         }
 	}
 }
