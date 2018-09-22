@@ -35,7 +35,6 @@ public class PlayerMovement : MonoBehaviour {
             upVelocity += Physics.gravity.y * Time.deltaTime;
             if (upVelocity < 0) { upVelocity += Physics.gravity.y * Time.deltaTime; }
             if (Vector3.Distance(startPos - new Vector3(0, startPos.y, 0), transform.position - new Vector3(0, transform.position.y, 0)) < 1f) { upVelocity += Physics.gravity.y * Time.deltaTime; }
-            Debug.Log(upVelocity);
             if (ctrl.isGrounded)
             {
                 airborne = false;
