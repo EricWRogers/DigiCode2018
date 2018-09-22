@@ -825,6 +825,7 @@ GameObject:
   - component: {fileID: 124125685672403150}
   - component: {fileID: 81186266841637758}
   - component: {fileID: 114518413990179614}
+  - component: {fileID: 114024101339451386}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -994,7 +995,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1975862796567950}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.7508913, y: 1.505204, z: -2.482349}
+  m_LocalPosition: {x: 16.993084, y: 0.5, z: -36.55382}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4808722320842782}
@@ -1650,6 +1651,18 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114024101339451386
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1995925310141686}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  profile: {fileID: 11400000, guid: 37690fe0199bc4ed28867498fce1387e, type: 2}
 --- !u!114 &114155909533992276
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1663,6 +1676,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 0.2
   rotateSpeed: 2
+  airborne: 0
+  startPos: {x: 0, y: 0, z: 0}
+  upVelocity: 0
 --- !u!114 &114518413990179614
 MonoBehaviour:
   m_ObjectHideFlags: 1
