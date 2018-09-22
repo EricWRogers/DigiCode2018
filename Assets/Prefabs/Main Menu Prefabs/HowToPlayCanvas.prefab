@@ -435,7 +435,14 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: This is How To Play Image and Text 3
+  m_Text: 'The sculpture base has a cyan light rising up from it, and it is where
+    you need to bring your materials to.
+
+
+    Stone Age will wander around and chase you if he sees you - keep a watchful eye
+    out for the red light over his head, because if he catches you you''ll be sent
+    back to your starting location, and any material you were holding will go back
+    to where it was originally!'
 --- !u!114 &114421374284018218
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -720,7 +727,20 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: This is How To Play Image and Text 2
+  m_Text: 'Move Forwards: Up Arrow
+
+    Move Backwards: Down Arrow
+
+    Rotate Camera Left: Left Arrow
+
+    Rotate Camera Right: Right Arrow
+
+    Pause: Escape
+
+
+    The marble blocks and buckets of paint have a yellow light ascending from them.
+    Your goal is to get all of them to the sculpture base. You can only carry one
+    at a time!'
 --- !u!114 &114904772297460636
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -753,7 +773,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: This is How to Play Image and Text 1
+  m_Text: "\tPhidias, the ancient Greek sculptor, has been inspired by all the magnificent
+    works the STEAM heroes have made, and wants to build new sculptures. But Stone
+    Age, the stone-faced scoundrel, wants to stop Phidias' work! \n\n\tGather the
+    materials scattered around and bring them to the sculpture's building site before
+    time runs out!"
 --- !u!114 &114951889579670086
 MonoBehaviour:
   m_ObjectHideFlags: 1
