@@ -15,6 +15,7 @@ public class GameLogic : MonoBehaviour{
     public int timerMinutes;
 
     public Canvas mainCanvas, winCanvas, loseCanvas, pauseCanvas;
+    public List<GameObject> collectables = new List<GameObject>();
 
     public void Start()
     {
@@ -24,9 +25,11 @@ public class GameLogic : MonoBehaviour{
         {
             if (obj.CompareTag("Collectable"))
             {
+                collectables.Add(obj);
                 collectedNeeded++;
             }
         }
+        collectables.TrimExcess();
         timerMinutes = timer / 60;
         timerSeconds = timer % 60;
     }
