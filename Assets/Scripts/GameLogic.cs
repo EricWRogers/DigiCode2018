@@ -19,6 +19,7 @@ public class GameLogic : MonoBehaviour{
 
     public Vector3 startPos, enemyStartPos, heldPos;
     GameObject plr;
+    Animator anim;
 
     public void Start()
     {
@@ -35,6 +36,7 @@ public class GameLogic : MonoBehaviour{
         plr = GameObject.FindGameObjectWithTag("Player");
         startPos = plr.transform.position;
         enemyStartPos = GameObject.FindGameObjectWithTag("Enemy").transform.position;
+        anim = plr.GetComponent<Animator>();
     }
 
     private void Update()
@@ -61,7 +63,8 @@ public class GameLogic : MonoBehaviour{
         }
         if (holding)
         {
-            holding.transform.position = plr.transform.position + Vector3.up;
+            holding.transform.position = plr.transform.position + Vector3.up*2.5f;
+            anim.SetBool("holding", true);
         }
     }
 
@@ -82,6 +85,7 @@ public class GameLogic : MonoBehaviour{
             // If we're holding a collectable, drop it
             holding.transform.position = heldPos;
             holding = null;
+            anim.SetBool("holding", false);
         }
     }
 
@@ -92,6 +96,7 @@ public class GameLogic : MonoBehaviour{
             // If we're holding a collectable when this function is called, add it to the collectable count
             Destroy(holding);
             holding = null;
+            anim.SetBool("holding", false);
             currentCollected++;
             if (currentCollected == collectedNeeded)
             {
