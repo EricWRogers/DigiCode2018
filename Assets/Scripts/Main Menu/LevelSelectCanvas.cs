@@ -20,7 +20,7 @@ public class LevelSelectCanvas : MonoBehaviour {
 
     public Image levelImage;
     public Image previousImage;
-    bool left;
+    public bool left;
 
     RectTransform curTrans, prevTrans;
 
@@ -28,36 +28,37 @@ public class LevelSelectCanvas : MonoBehaviour {
     public Button back, forward;
     public Text levelName;
 
-    public float scrollSpeed;
+    public float scrollSpeed = 1f;
     float y;
 
     private void Start()
     {
+        Time.timeScale = 1f;
         levelImage.sprite = levels[currentLevel].LevelImage;
         curTrans = levelImage.GetComponent<RectTransform>();
         prevTrans = previousImage.GetComponent<RectTransform>();
-        y = curTrans.anchoredPosition.y;
+        y = curTrans.localPosition.y;
     }
 
     void Update () {
-        if (left && curTrans.anchoredPosition.x != 0f)
+        if (left && curTrans.localPosition.x != 0f)
         {
-            curTrans.anchoredPosition.Set(curTrans.anchoredPosition.x - (Time.deltaTime * scrollSpeed), y);
-            prevTrans.anchoredPosition.Set(prevTrans.anchoredPosition.x - (Time.deltaTime * scrollSpeed), y);
-            if (curTrans.anchoredPosition.x < 0f)
+            curTrans.localPosition += new Vector3(Time.deltaTime * scrollSpeed, 0, 0);
+            prevTrans.localPosition += new Vector3(Time.deltaTime * scrollSpeed, 0, 0);
+            if (curTrans.localPosition.x > 0f)
             {
-                curTrans.anchoredPosition.Set(0f, y);
-                prevTrans.anchoredPosition.Set(-1024f, y);
+                curTrans.localPosition = new Vector3(0, y, 0);
+                prevTrans.localPosition = new Vector3(1024f, y, 0);
             }
         }
-        if (!left && curTrans.anchoredPosition.x != 0f)
+        if (!left && curTrans.localPosition.x != 0f)
         {
-            curTrans.anchoredPosition.Set(curTrans.anchoredPosition.x + (Time.deltaTime * scrollSpeed), y);
-            prevTrans.anchoredPosition.Set(prevTrans.anchoredPosition.x + (Time.deltaTime * scrollSpeed), y);
-            if (curTrans.anchoredPosition.x > 0f)
+            curTrans.localPosition -= new Vector3(Time.deltaTime * scrollSpeed, 0, 0);
+            prevTrans.localPosition -= new Vector3(Time.deltaTime * scrollSpeed, 0, 0);
+            if (curTrans.localPosition.x < 0f)
             {
-                curTrans.anchoredPosition.Set(0f, y);
-                prevTrans.anchoredPosition.Set(1024f, y);
+                curTrans.localPosition = new Vector3(0, y, 0);
+                prevTrans.localPosition = new Vector3(-1024f, y, 0);
             }
         }
     }
@@ -71,8 +72,8 @@ public class LevelSelectCanvas : MonoBehaviour {
             left = true;
             currentLevel--;
             levelImage.sprite = levels[currentLevel].LevelImage;
-            prevTrans.anchoredPosition.Set(0f, y);
-            curTrans.anchoredPosition.Set(1024f, y);
+            prevTrans.localPosition = new Vector3(0, y, 0);
+            curTrans.localPosition = new Vector3(-1024f, y, 0);
             levelName.text = levels[currentLevel].LevelName;
             if (currentLevel == 0)
             {
@@ -90,8 +91,8 @@ public class LevelSelectCanvas : MonoBehaviour {
             left = false;
             currentLevel++;
             levelImage.sprite = levels[currentLevel].LevelImage;
-            prevTrans.anchoredPosition.Set(0f, y);
-            curTrans.anchoredPosition.Set(-1024f, y);
+            prevTrans.localPosition = new Vector3(0, y, 0);
+            curTrans.localPosition = new Vector3(1024f, y, 0);
             levelName.text = levels[currentLevel].LevelName;
             if (currentLevel == levels.Length - 1)
             {

@@ -225,6 +225,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114249826795416630, guid: 78f445491eb48f44494757abff794cc7,
+        type: 2}
+      propertyPath: levels.Array.size
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 114789504085621242, guid: 78f445491eb48f44494757abff794cc7,
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -444,6 +449,26 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 114249826795416630, guid: 78f445491eb48f44494757abff794cc7,
+        type: 2}
+      propertyPath: scrollSpeed
+      value: 1500
+      objectReference: {fileID: 0}
+    - target: {fileID: 114249826795416630, guid: 78f445491eb48f44494757abff794cc7,
+        type: 2}
+      propertyPath: levels.Array.data[2].SceneName
+      value: Level1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114249826795416630, guid: 78f445491eb48f44494757abff794cc7,
+        type: 2}
+      propertyPath: levels.Array.data[2].LevelName
+      value: Level 403
+      objectReference: {fileID: 0}
+    - target: {fileID: 114249826795416630, guid: 78f445491eb48f44494757abff794cc7,
+        type: 2}
+      propertyPath: levels.Array.data[2].LevelImage
+      value: 
+      objectReference: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 78f445491eb48f44494757abff794cc7, type: 2}
   m_IsPrefabParent: 0
