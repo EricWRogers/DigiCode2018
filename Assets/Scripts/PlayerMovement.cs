@@ -13,7 +13,10 @@ public class PlayerMovement : MonoBehaviour {
 	}
 	
 	void Update () {
-        ctrl.Move(transform.forward*Input.GetAxis("Vertical")*moveSpeed);
-        transform.Rotate(new Vector3(0, Input.GetAxis("Horizontal")*rotateSpeed, 0));
+        if (GameLogic.Instance.mainCanvas.gameObject.activeInHierarchy)
+        {
+            ctrl.Move(transform.forward * Input.GetAxis("Vertical") * moveSpeed);
+            transform.Rotate(new Vector3(0, Input.GetAxis("Horizontal") * rotateSpeed, 0));
+        }
 	}
 }
