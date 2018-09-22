@@ -333,11 +333,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 82d0743dd02750d49a9b2b865edbe008, type: 2}
   m_IsPrefabParent: 0
---- !u!223 &599547188 stripped
-Canvas:
-  m_PrefabParentObject: {fileID: 223114850767478674, guid: 253d68f96681c3c4e92ec91fbf487dd4,
-    type: 2}
-  m_PrefabInternal: {fileID: 637743794}
 --- !u!1001 &637743794
 Prefab:
   m_ObjectHideFlags: 0
@@ -377,29 +372,9 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
-    - target: {fileID: 114116391437482578, guid: 253d68f96681c3c4e92ec91fbf487dd4,
-        type: 2}
-      propertyPath: winCanvas
-      value: 
-      objectReference: {fileID: 599547188}
-    - target: {fileID: 114116391437482578, guid: 253d68f96681c3c4e92ec91fbf487dd4,
-        type: 2}
-      propertyPath: loseCanvas
-      value: 
-      objectReference: {fileID: 679623610}
-    - target: {fileID: 114116391437482578, guid: 253d68f96681c3c4e92ec91fbf487dd4,
-        type: 2}
-      propertyPath: mainCanvas
-      value: 
-      objectReference: {fileID: 989464190}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 253d68f96681c3c4e92ec91fbf487dd4, type: 2}
   m_IsPrefabParent: 0
---- !u!223 &679623610 stripped
-Canvas:
-  m_PrefabParentObject: {fileID: 223947816450840336, guid: 253d68f96681c3c4e92ec91fbf487dd4,
-    type: 2}
-  m_PrefabInternal: {fileID: 637743794}
 --- !u!1001 &889630510
 Prefab:
   m_ObjectHideFlags: 0
@@ -442,11 +417,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e40e0c5cb621640698cfca1272d2e684, type: 3}
   m_IsPrefabParent: 0
---- !u!223 &989464190 stripped
-Canvas:
-  m_PrefabParentObject: {fileID: 223967687255046370, guid: 253d68f96681c3c4e92ec91fbf487dd4,
-    type: 2}
-  m_PrefabInternal: {fileID: 637743794}
 --- !u!1 &1106860945
 GameObject:
   m_ObjectHideFlags: 0

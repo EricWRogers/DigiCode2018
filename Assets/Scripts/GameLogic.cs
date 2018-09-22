@@ -33,12 +33,19 @@ public class GameLogic : MonoBehaviour{
 
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Time.timeScale = 0f;
+            mainCanvas.gameObject.SetActive(false);
+            pauseCanvas.gameObject.SetActive(true);
+        }
         timerSeconds -= Time.deltaTime;
         if (timerSeconds < 0f)
         {
             if (timerMinutes > 0)
             {
                 timerMinutes--;
+                timerSeconds += 60f;
             } else
             {
                 Time.timeScale = 0f;
