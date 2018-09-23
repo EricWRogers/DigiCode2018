@@ -361,6 +361,12 @@ Prefab:
       propertyPath: m_SizeDelta.y
       value: 200
       objectReference: {fileID: 0}
+    - target: {fileID: 114249826795416630, guid: 78f445491eb48f44494757abff794cc7,
+        type: 2}
+      propertyPath: levels.Array.data[0].LevelImage
+      value: 
+      objectReference: {fileID: 21300000, guid: bf8b99b3d2d3a1141b73a9c56d66add4,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 78f445491eb48f44494757abff794cc7, type: 2}
   m_IsPrefabParent: 0
