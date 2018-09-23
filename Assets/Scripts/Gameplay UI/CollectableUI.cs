@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class CollectableUI : MonoBehaviour {
 
-    public Sprite unCollected, collected;
     public List<Image> imageList = new List<Image>();
     public Image baseImg;
 
