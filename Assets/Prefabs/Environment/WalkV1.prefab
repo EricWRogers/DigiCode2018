@@ -26,8 +26,8 @@ GameObject:
   m_Name: WalkV1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_NavMeshLayer: 1
+  m_StaticEditorFlags: 8
   m_IsActive: 1
 --- !u!4 &4071630387182016
 Transform:
@@ -36,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1518842852678900}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -31.495436, y: 3.752802, z: 14.323286}
+  m_LocalPosition: {x: -0.97795486, y: 4.157538, z: 0.57341385}
   m_LocalScale: {x: 60.000004, y: 613.71826, z: 365.7537}
   m_Children: []
   m_Father: {fileID: 0}
