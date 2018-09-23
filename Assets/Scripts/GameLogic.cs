@@ -11,6 +11,7 @@ public class GameLogic : MonoBehaviour{
     public GameObject holding = null;
 
     public int timer = 90;
+    public int bonusTime = 15;
     public float timerSeconds;
     public int timerMinutes;
 
@@ -104,6 +105,14 @@ public class GameLogic : MonoBehaviour{
                 Time.timeScale = 0f;
                 mainCanvas.gameObject.SetActive(false);
                 winCanvas.gameObject.SetActive(true);
+            } else
+            {
+                timerSeconds += 15f;
+                if (timerSeconds >= 60)
+                {
+                    timerMinutes++;
+                    timerSeconds -= 60f;
+                }
             }
         }
     }

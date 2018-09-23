@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -158,7 +158,7 @@ Prefab:
     - target: {fileID: 224640686919615010, guid: d154078b941ff9d40b3b268bdaaf07f1,
         type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 224640686919615010, guid: d154078b941ff9d40b3b268bdaaf07f1,
         type: 2}
@@ -263,7 +263,7 @@ Prefab:
     - target: {fileID: 224088811838066258, guid: 78f445491eb48f44494757abff794cc7,
         type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 224088811838066258, guid: 78f445491eb48f44494757abff794cc7,
         type: 2}
@@ -506,7 +506,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!223 &848871544 stripped
 Canvas:
@@ -576,7 +576,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!223 &1566050180 stripped
 Canvas:
@@ -628,7 +628,7 @@ Prefab:
     - target: {fileID: 224176146248539636, guid: 9a4a06618c92bbb43ba077fa259562c3,
         type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 224176146248539636, guid: 9a4a06618c92bbb43ba077fa259562c3,
         type: 2}
@@ -775,7 +775,7 @@ Prefab:
     - target: {fileID: 224242030078572336, guid: 1e47afbc8fe16c140b9136235c609643,
         type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 224242030078572336, guid: 1e47afbc8fe16c140b9136235c609643,
         type: 2}
