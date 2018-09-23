@@ -1,0 +1,277 @@
+fileFormatVersion: 2
+guid: 1226f0bf8a4cf8c4693254de83637924
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Belt
+    100002: ElbowL
+    100004: ElbowL_end
+    100006: ElbowR
+    100008: ElbowR_end
+    100010: FootIKL
+    100012: FootIKL_end
+    100014: FootIKR
+    100016: FootIKR_end
+    100018: HandIKL
+    100020: HandIKL_end
+    100022: HandIKR
+    100024: HandIKR_end
+    100026: Head
+    100028: HeadTop_End
+    100030: HeadTop_End_end
+    100032: HeadTop_End_end_end
+    100034: Hips
+    100036: Human Armature
+    100038: Human_Mesh
+    100040: //RootNode
+    100042: KneeL
+    100044: KneeL_end
+    100046: KneeR
+    100048: KneeR_end
+    100050: LeftArm
+    100052: LeftFoot
+    100054: LeftForeArm
+    100056: LeftHand
+    100058: LeftHandIndex1
+    100060: LeftHandIndex2
+    100062: LeftHandIndex3
+    100064: LeftHandIndex4
+    100066: LeftHandIndex4_end
+    100068: LeftHandIndex4_end_end
+    100070: LeftHandThumb1
+    100072: LeftHandThumb2
+    100074: LeftHandThumb3
+    100076: LeftHandThumb4
+    100078: LeftHandThumb4_end
+    100080: LeftHandThumb4_end_end
+    100082: LeftLeg
+    100084: LeftShoulder
+    100086: LeftToe_End
+    100088: LeftToe_End_end
+    100090: LeftToe_End_end_end
+    100092: LeftToeBase
+    100094: LeftUpLeg
+    100096: Neck
+    100098: RightArm
+    100100: RightFoot
+    100102: RightForeArm
+    100104: RightHand
+    100106: RightHandIndex1
+    100108: RightHandIndex2
+    100110: RightHandIndex3
+    100112: RightHandIndex4
+    100114: RightHandIndex4_end
+    100116: RightHandIndex4_end_end
+    100118: RightHandThumb1
+    100120: RightHandThumb2
+    100122: RightHandThumb3
+    100124: RightHandThumb4
+    100126: RightHandThumb4_end
+    100128: RightHandThumb4_end_end
+    100130: RightLeg
+    100132: RightShoulder
+    100134: RightToe_End
+    100136: RightToe_End_end
+    100138: RightToe_End_end_end
+    100140: RightToeBase
+    100142: RightUpLeg
+    100144: Spine
+    100146: Spine1
+    100148: Spine2
+    100150: Tunic
+    400000: Belt
+    400002: ElbowL
+    400004: ElbowL_end
+    400006: ElbowR
+    400008: ElbowR_end
+    400010: FootIKL
+    400012: FootIKL_end
+    400014: FootIKR
+    400016: FootIKR_end
+    400018: HandIKL
+    400020: HandIKL_end
+    400022: HandIKR
+    400024: HandIKR_end
+    400026: Head
+    400028: HeadTop_End
+    400030: HeadTop_End_end
+    400032: HeadTop_End_end_end
+    400034: Hips
+    400036: Human Armature
+    400038: Human_Mesh
+    400040: //RootNode
+    400042: KneeL
+    400044: KneeL_end
+    400046: KneeR
+    400048: KneeR_end
+    400050: LeftArm
+    400052: LeftFoot
+    400054: LeftForeArm
+    400056: LeftHand
+    400058: LeftHandIndex1
+    400060: LeftHandIndex2
+    400062: LeftHandIndex3
+    400064: LeftHandIndex4
+    400066: LeftHandIndex4_end
+    400068: LeftHandIndex4_end_end
+    400070: LeftHandThumb1
+    400072: LeftHandThumb2
+    400074: LeftHandThumb3
+    400076: LeftHandThumb4
+    400078: LeftHandThumb4_end
+    400080: LeftHandThumb4_end_end
+    400082: LeftLeg
+    400084: LeftShoulder
+    400086: LeftToe_End
+    400088: LeftToe_End_end
+    400090: LeftToe_End_end_end
+    400092: LeftToeBase
+    400094: LeftUpLeg
+    400096: Neck
+    400098: RightArm
+    400100: RightFoot
+    400102: RightForeArm
+    400104: RightHand
+    400106: RightHandIndex1
+    400108: RightHandIndex2
+    400110: RightHandIndex3
+    400112: RightHandIndex4
+    400114: RightHandIndex4_end
+    400116: RightHandIndex4_end_end
+    400118: RightHandThumb1
+    400120: RightHandThumb2
+    400122: RightHandThumb3
+    400124: RightHandThumb4
+    400126: RightHandThumb4_end
+    400128: RightHandThumb4_end_end
+    400130: RightLeg
+    400132: RightShoulder
+    400134: RightToe_End
+    400136: RightToe_End_end
+    400138: RightToe_End_end_end
+    400140: RightToeBase
+    400142: RightUpLeg
+    400144: Spine
+    400146: Spine1
+    400148: Spine2
+    400150: Tunic
+    2100000: Texture
+    2100002: Tunic
+    4300000: Human_Mesh
+    4300002: Belt
+    4300004: Tunic
+    7400000: Idle
+    7400002: Run
+    7400004: RunHandsUp
+    7400006: Human Armature|HandsUp
+    7400008: Human Armature|Human Armature|Human Armature|ArmatureAction.001|Human
+      Arma.000
+    7400010: Human Armature|Human Armature|Human Armature|ArmatureAction.001|Human
+      Armature
+    7400012: Human Armature|Human Armature|Human Armature|ArmatureAction.002|Human
+      Armature
+    7400014: Human Armature|Human Armature|Human Armature|Death|Human Armature|Death
+    7400016: Human Armature|Human Armature|Human Armature|Idle|Human Armature|Idle
+    7400018: Human Armature|Human Armature|Human Armature|Jump|Human Armature|Jump
+    7400020: Human Armature|Human Armature|Human Armature|Punch|Human Armature|Punch
+    7400022: Human Armature|Human Armature|Human Armature|Run|Human Armature|Run
+    7400024: Human Armature|Human Armature|Human Armature|Walk|Human Armature|Walk
+    7400026: Human Armature|Human Armature|Human Armature|Working|Human Armature|Working
+    7400028: Human Armature|Idle
+    7400030: Human Armature|Run
+    7400032: Human Armature|RunHandsUp
+    9500000: //RootNode
+    13700000: Belt
+    13700002: Human_Mesh
+    13700004: Tunic
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Texture
+    second: {fileID: 2100000, guid: 037e7b07ab237c640abd193524a235bb, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Tunic
+    second: {fileID: 2100002, guid: b4b5d19019c29d1449f97bdcb5bd6c90, type: 3}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.35
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
