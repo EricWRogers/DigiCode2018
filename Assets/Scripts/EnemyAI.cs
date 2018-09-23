@@ -10,13 +10,18 @@ public class EnemyAI : MonoBehaviour {
     float xWander, zWander;
     public float angle, range;
     GameObject plr;
+    Animator anim;
 
 	void Start () {
+        anim = GetComponent<Animator>();
         ag = GetComponent<NavMeshAgent>();
         plr = GameObject.FindGameObjectWithTag("Player");
+
 	}
 	
 	void Update () {
+        anim.SetFloat("forwardVelocity", ag.velocity.magnitude);
+        anim.SetFloat("turnVelocity", ag.velocity.y);
         if (!foundPlayer)
         {
             if (!ag.hasPath || ag.remainingDistance < 1f)
