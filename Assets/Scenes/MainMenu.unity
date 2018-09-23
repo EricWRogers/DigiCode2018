@@ -320,6 +320,43 @@ Prefab:
       propertyPath: mainCanvas
       value: 
       objectReference: {fileID: 2136345163}
+    - target: {fileID: 114249826795416630, guid: 78f445491eb48f44494757abff794cc7,
+        type: 2}
+      propertyPath: levels.Array.data[2].LevelImage
+      value: 
+      objectReference: {fileID: 21300000, guid: aba1571063258f04581b832690894ae1,
+        type: 3}
+    - target: {fileID: 114249826795416630, guid: 78f445491eb48f44494757abff794cc7,
+        type: 2}
+      propertyPath: levels.Array.data[2].SceneName
+      value: Level3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114249826795416630, guid: 78f445491eb48f44494757abff794cc7,
+        type: 2}
+      propertyPath: levels.Array.data[2].LevelName
+      value: Level Three
+      objectReference: {fileID: 0}
+    - target: {fileID: 114741099604185736, guid: 78f445491eb48f44494757abff794cc7,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: aba1571063258f04581b832690894ae1,
+        type: 3}
+    - target: {fileID: 114741099604185736, guid: 78f445491eb48f44494757abff794cc7,
+        type: 2}
+      propertyPath: m_PreserveAspect
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224952785985208692, guid: 78f445491eb48f44494757abff794cc7,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 224952785985208692, guid: 78f445491eb48f44494757abff794cc7,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 200
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 78f445491eb48f44494757abff794cc7, type: 2}
   m_IsPrefabParent: 0
