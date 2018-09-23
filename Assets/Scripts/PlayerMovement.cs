@@ -6,13 +6,18 @@ public class PlayerMovement : MonoBehaviour {
 
     CharacterController ctrl;
 	Animator anim;
-    public float moveSpeed = 0.1f;
+    float moveSpeed = 0.1f;
+    public float slowMoveSpeed = 0.05f;
+    public float normMoveSpeed = 0.2f;
     public float rotateSpeed = 1f;
 
     public bool airborne;
 
     public Vector3 startPos;
     public float upVelocity;
+
+    public bool slow = false;
+    public float slowTime = 0f;
 
 	void Start () {
         ctrl = GetComponent<CharacterController>();
@@ -21,6 +26,18 @@ public class PlayerMovement : MonoBehaviour {
     }
 	
 	void Update () {
+        if (slow)
+        {
+            moveSpeed = slowMoveSpeed;
+            slowTime -= Time.deltaTime;
+            if (slowTime <= 0f)
+            {
+                slow = false;
+            }
+        } else
+        {
+            moveSpeed = normMoveSpeed;
+        }
         if (GameLogic.Instance.mainCanvas.gameObject.activeInHierarchy && !airborne)
         {
             ctrl.Move(transform.forward * Input.GetAxis("Vertical") * moveSpeed);
