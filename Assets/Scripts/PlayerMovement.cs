@@ -11,11 +11,12 @@ public class PlayerMovement : MonoBehaviour {
     public float normMoveSpeed = 0.2f;
     public float rotateSpeed = 1f;
 
-    public bool airborne;
+    public bool airborne, airJump;
 
     public Vector3 startPos;
-    public float upVelocity;
-
+    public float defaultUpVelocity = 3.0f;
+    public float upVelocity = 3.0f;
+    
     public bool slow = false;
     public float slowTime = 0f;
 
@@ -40,14 +41,24 @@ public class PlayerMovement : MonoBehaviour {
         }
         if (GameLogic.Instance.mainCanvas.gameObject.activeInHierarchy && !airborne)
         {
-            ctrl.Move(transform.forward * Input.GetAxis("Vertical") * moveSpeed);
-		    anim.SetFloat("forwardVelocity", ctrl.velocity.magnitude);
+            //ctrl.Move(transform.forward * Input.GetAxis("Vertical") * moveSpeed);
+		    //anim.SetFloat("forwardVelocity", ctrl.velocity.magnitude);
             transform.Rotate(new Vector3(0, Input.GetAxis("Horizontal") * rotateSpeed, 0));
 		    anim.SetFloat("turnVelocity", ctrl.velocity.y);
+            ctrl.Move(transform.forward * Input.GetAxis("Vertical") * moveSpeed);
+		    anim.SetFloat("forwardVelocity", ctrl.velocity.magnitude);
         }
-        if (airborne)
+        if (Input.GetKeyDown(KeyCode.Space)&&!airborne && !airJump)
         {
-            ctrl.Move((startPos-transform.position)*Time.deltaTime);
+            upVelocity = defaultUpVelocity;
+            airJump = true;
+        }
+        if (airborne || airJump)
+        {
+            if (airborne)
+            {
+                ctrl.Move((startPos - transform.position) * Time.deltaTime);
+            }
             ctrl.Move(new Vector3(0, upVelocity * Time.deltaTime, 0));
             upVelocity += Physics.gravity.y * Time.deltaTime;
             if (upVelocity < 0) { upVelocity += Physics.gravity.y * Time.deltaTime; }
@@ -55,6 +66,7 @@ public class PlayerMovement : MonoBehaviour {
             if (ctrl.isGrounded)
             {
                 airborne = false;
+                airJump = false;
             }
         }
 	}
