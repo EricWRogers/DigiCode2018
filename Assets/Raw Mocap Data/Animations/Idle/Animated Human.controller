@@ -13,25 +13,25 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: forwardVelocity
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: holding
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: holdWalk
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Locomotion
@@ -91,21 +91,13 @@ BlendTree:
     m_DirectBlendParameter: turnVelocity
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 636002dd6b4a4304c904593ac44c7eec, type: 2}
-    m_Threshold: 3
-    m_Position: {x: -3.1701539, y: 4.89035}
+    m_Motion: {fileID: 7400000, guid: c31c80009cccec043ac9ec4439552a4d, type: 3}
+    m_Threshold: 4
+    m_Position: {x: 3.1701539, y: 4.89035}
     m_TimeScale: 1
     m_CycleOffset: 0
     m_DirectBlendParameter: Blend
     m_Mirror: 0
-  - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 636002dd6b4a4304c904593ac44c7eec, type: 2}
-    m_Threshold: 4
-    m_Position: {x: 3.1701539, y: 4.89035}
-    m_TimeScale: 1
-    m_CycleOffset: 0.5
-    m_DirectBlendParameter: Blend
-    m_Mirror: 1
   - serializedVersion: 2
     m_Motion: {fileID: 7400000, guid: 0b08a305397a7d341846b937110ac963, type: 2}
     m_Threshold: 5
@@ -123,8 +115,16 @@ BlendTree:
     m_DirectBlendParameter: turnVelocity
     m_Mirror: 1
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 3c75d22a0ae39c64aa284961becb850c, type: 2}
+    m_Motion: {fileID: 7400004, guid: 1226f0bf8a4cf8c4693254de83637924, type: 3}
     m_Threshold: 7
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: turnVelocity
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 0}
+    m_Threshold: 0
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
     m_CycleOffset: 0
@@ -409,7 +409,7 @@ AnimatorStateMachine:
     m_Position: {x: 420, y: -108, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102515211790469938}
-    m_Position: {x: 451.6826, y: 39.285706, z: 0}
+    m_Position: {x: 456, y: 36, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102497550137376976}
     m_Position: {x: 499.17465, y: 138.58731, z: 0}
