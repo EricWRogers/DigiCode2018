@@ -26,7 +26,7 @@ RenderSettings:
   m_AmbientIntensity: 1
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
-  m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
+  m_SkyboxMaterial: {fileID: 2100000, guid: c7b48553f389345209fb1a991608df64, type: 2}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.20953208, g: 0.52050674, b: 0.70474136, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1509,6 +1509,34 @@ Prefab:
       propertyPath: mainCanvas
       value: 
       objectReference: {fileID: 2136345163}
+    - target: {fileID: 114137789108325442, guid: 9a4a06618c92bbb43ba077fa259562c3,
+        type: 2}
+      propertyPath: m_Text
+      value: 'Walyn Curtis - Programmer
+
+        Eric Rogers - Artist
+
+        Walker Ray - Artist'
+      objectReference: {fileID: 0}
+    - target: {fileID: 1500307641568978, guid: 9a4a06618c92bbb43ba077fa259562c3, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224346059141339784, guid: 9a4a06618c92bbb43ba077fa259562c3,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 224346059141339784, guid: 9a4a06618c92bbb43ba077fa259562c3,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 224346059141339784, guid: 9a4a06618c92bbb43ba077fa259562c3,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -150
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9a4a06618c92bbb43ba077fa259562c3, type: 2}
   m_IsPrefabParent: 0

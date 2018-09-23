@@ -42,7 +42,7 @@ public class GameLogic : MonoBehaviour{
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && mainCanvas.gameObject.activeInHierarchy)
         {
             Time.timeScale = 0f;
             mainCanvas.gameObject.SetActive(false);
