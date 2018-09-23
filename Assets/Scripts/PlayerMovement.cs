@@ -14,8 +14,9 @@ public class PlayerMovement : MonoBehaviour {
     public bool airborne, airJump;
 
     public Vector3 startPos;
-    public float upVelocity;
-
+    public float defaultUpVelocity = 3.0f;
+    public float upVelocity = 3.0f;
+    
     public bool slow = false;
     public float slowTime = 0f;
 
@@ -47,7 +48,7 @@ public class PlayerMovement : MonoBehaviour {
         }
         if (Input.GetKeyDown(KeyCode.Space)&&!airborne && !airJump)
         {
-            upVelocity = 3;
+            upVelocity = defaultUpVelocity;
             airJump = true;
         }
         if (airborne || airJump)
