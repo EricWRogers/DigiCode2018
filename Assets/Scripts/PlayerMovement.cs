@@ -41,10 +41,12 @@ public class PlayerMovement : MonoBehaviour {
         }
         if (GameLogic.Instance.mainCanvas.gameObject.activeInHierarchy && !airborne)
         {
-            ctrl.Move(transform.forward * Input.GetAxis("Vertical") * moveSpeed);
-		    anim.SetFloat("forwardVelocity", ctrl.velocity.magnitude);
+            //ctrl.Move(transform.forward * Input.GetAxis("Vertical") * moveSpeed);
+		    //anim.SetFloat("forwardVelocity", ctrl.velocity.magnitude);
             transform.Rotate(new Vector3(0, Input.GetAxis("Horizontal") * rotateSpeed, 0));
 		    anim.SetFloat("turnVelocity", ctrl.velocity.y);
+            ctrl.Move(transform.forward * Input.GetAxis("Vertical") * moveSpeed);
+		    anim.SetFloat("forwardVelocity", ctrl.velocity.magnitude);
         }
         if (Input.GetKeyDown(KeyCode.Space)&&!airborne && !airJump)
         {
