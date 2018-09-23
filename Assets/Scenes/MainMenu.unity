@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -215,6 +215,37 @@ Prefab:
       propertyPath: mainCanvas
       value: 
       objectReference: {fileID: 2136345163}
+    - target: {fileID: 1118372039782258, guid: d154078b941ff9d40b3b268bdaaf07f1, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114951889579670086, guid: d154078b941ff9d40b3b268bdaaf07f1,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 046ea80ae9219a7428a079b92b7560a1,
+        type: 3}
+    - target: {fileID: 114123727441203674, guid: d154078b941ff9d40b3b268bdaaf07f1,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 046ea80ae9219a7428a079b92b7560a1,
+        type: 3}
+    - target: {fileID: 114123727441203674, guid: d154078b941ff9d40b3b268bdaaf07f1,
+        type: 2}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114123727441203674, guid: d154078b941ff9d40b3b268bdaaf07f1,
+        type: 2}
+      propertyPath: m_PreserveAspect
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114208638811077082, guid: d154078b941ff9d40b3b268bdaaf07f1,
+        type: 2}
+      propertyPath: m_FontData.m_FontSize
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d154078b941ff9d40b3b268bdaaf07f1, type: 2}
   m_IsPrefabParent: 0
@@ -356,6 +387,53 @@ Prefab:
         type: 2}
       propertyPath: m_SizeDelta.y
       value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 1478178528122742, guid: 78f445491eb48f44494757abff794cc7, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114897386815773276, guid: 78f445491eb48f44494757abff794cc7,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 046ea80ae9219a7428a079b92b7560a1,
+        type: 3}
+    - target: {fileID: 114957096935230092, guid: 78f445491eb48f44494757abff794cc7,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 046ea80ae9219a7428a079b92b7560a1,
+        type: 3}
+    - target: {fileID: 114552279638019800, guid: 78f445491eb48f44494757abff794cc7,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 046ea80ae9219a7428a079b92b7560a1,
+        type: 3}
+    - target: {fileID: 114552279638019800, guid: 78f445491eb48f44494757abff794cc7,
+        type: 2}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1613230140391098, guid: 78f445491eb48f44494757abff794cc7, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114252864420903826, guid: 78f445491eb48f44494757abff794cc7,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 046ea80ae9219a7428a079b92b7560a1,
+        type: 3}
+    - target: {fileID: 114252864420903826, guid: 78f445491eb48f44494757abff794cc7,
+        type: 2}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114383313799540806, guid: 78f445491eb48f44494757abff794cc7,
+        type: 2}
+      propertyPath: m_FontData.m_FontSize
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 78f445491eb48f44494757abff794cc7, type: 2}
@@ -842,6 +920,54 @@ Prefab:
       propertyPath: creditsCanvas
       value: 
       objectReference: {fileID: 726699521}
+    - target: {fileID: 114329170375555872, guid: 1e47afbc8fe16c140b9136235c609643,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 046ea80ae9219a7428a079b92b7560a1,
+        type: 3}
+    - target: {fileID: 114329170375555872, guid: 1e47afbc8fe16c140b9136235c609643,
+        type: 2}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114979672024142000, guid: 1e47afbc8fe16c140b9136235c609643,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 046ea80ae9219a7428a079b92b7560a1,
+        type: 3}
+    - target: {fileID: 114979672024142000, guid: 1e47afbc8fe16c140b9136235c609643,
+        type: 2}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114829997547723208, guid: 1e47afbc8fe16c140b9136235c609643,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 046ea80ae9219a7428a079b92b7560a1,
+        type: 3}
+    - target: {fileID: 114829997547723208, guid: 1e47afbc8fe16c140b9136235c609643,
+        type: 2}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114911736375936708, guid: 1e47afbc8fe16c140b9136235c609643,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 046ea80ae9219a7428a079b92b7560a1,
+        type: 3}
+    - target: {fileID: 114911736375936708, guid: 1e47afbc8fe16c140b9136235c609643,
+        type: 2}
+      propertyPath: m_Type
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1491483569604488, guid: 1e47afbc8fe16c140b9136235c609643, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1e47afbc8fe16c140b9136235c609643, type: 2}
   m_IsPrefabParent: 0
