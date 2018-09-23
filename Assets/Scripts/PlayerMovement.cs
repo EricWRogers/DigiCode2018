@@ -26,7 +26,7 @@ public class PlayerMovement : MonoBehaviour {
         startPos = transform.position;
     }
 	
-	void Update () {
+	void FixedUpdate () {
         if (slow)
         {
             moveSpeed = slowMoveSpeed;
