@@ -46,7 +46,14 @@ public class PlayerMovement : MonoBehaviour {
             transform.Rotate(new Vector3(0, Input.GetAxis("Horizontal") * rotateSpeed, 0));
 		    anim.SetFloat("turnVelocity", ctrl.velocity.y);
             ctrl.Move(transform.forward * Input.GetAxis("Vertical") * moveSpeed);
-		    anim.SetFloat("forwardVelocity", ctrl.velocity.magnitude);
+            if (ctrl.velocity.magnitude >= 0.1f && GameLogic.Instance.holding){
+		        anim.SetFloat("forwardVelocity", ctrl.velocity.magnitude);
+                anim.SetBool("holdWalk", true);
+            }
+            if (ctrl.velocity.magnitude >= 0.1f && !GameLogic.Instance.holding){
+		        anim.SetFloat("forwardVelocity", ctrl.velocity.magnitude);
+                anim.SetBool("holdWalk", false);
+            }
         }
         if (Input.GetKeyDown(KeyCode.Space)&&!airborne && !airJump)
         {
