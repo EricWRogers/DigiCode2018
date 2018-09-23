@@ -11,7 +11,7 @@ public class PlayerMovement : MonoBehaviour {
     public float normMoveSpeed = 0.2f;
     public float rotateSpeed = 1f;
 
-    public bool airborne;
+    public bool airborne, airJump;
 
     public Vector3 startPos;
     public float upVelocity;
@@ -45,9 +45,17 @@ public class PlayerMovement : MonoBehaviour {
             transform.Rotate(new Vector3(0, Input.GetAxis("Horizontal") * rotateSpeed, 0));
 		    anim.SetFloat("turnVelocity", ctrl.velocity.y);
         }
-        if (airborne)
+        if (Input.GetKeyDown(KeyCode.Space)&&!airborne && !airJump)
         {
-            ctrl.Move((startPos-transform.position)*Time.deltaTime);
+            upVelocity = 3;
+            airJump = true;
+        }
+        if (airborne || airJump)
+        {
+            if (airborne)
+            {
+                ctrl.Move((startPos - transform.position) * Time.deltaTime);
+            }
             ctrl.Move(new Vector3(0, upVelocity * Time.deltaTime, 0));
             upVelocity += Physics.gravity.y * Time.deltaTime;
             if (upVelocity < 0) { upVelocity += Physics.gravity.y * Time.deltaTime; }
@@ -55,6 +63,7 @@ public class PlayerMovement : MonoBehaviour {
             if (ctrl.isGrounded)
             {
                 airborne = false;
+                airJump = false;
             }
         }
 	}
